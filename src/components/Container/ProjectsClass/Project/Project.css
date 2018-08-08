@@ -1,0 +1,51 @@
+.singleProject {
+  background: rgba(0, 0, 123, 0.323);
+  box-sizing: border-box;
+  box-shadow: 15px 10px 5px black;
+  padding: 5px;
+  width: 90%;
+  margin: 15px auto;
+  border: 1px solid rgb(192, 192, 192);
+  transition: all .3s ease-in;
+}
+
+.singleProject:hover {
+  box-shadow: 15px 10px 15px black;
+  border: 1px solid rgb(5, 1, 94);
+  color: rgb(178, 139, 0);
+  transform: scale(1.05);
+  background: rgb(2, 1, 25);
+  background: linear-gradient(118deg, rgba(2, 1, 25, 1) 0%, rgba(5, 5, 61, 1) 36%, rgba(1, 0, 23, 1) 100%);
+}
+
+.singleProject a:link {
+  color: silver;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.singleProject__title {
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.singleProject__desc {
+  margin: 0px auto 25px auto;
+  padding: 0 1%;
+}
+
+.singleProject__link {
+  color: rgb(175, 175, 175);
+  transition: all .2s ease-in-out;
+}
+.singleProject__link:hover {
+  color: wheat;
+}
+
+@media (min-width: 500px) {
+  .singleProject {
+    padding: 5px;
+    width: 40%;
+    min-width: 400px;
+  }
+}

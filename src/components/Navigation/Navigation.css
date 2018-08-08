@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  z-index: 11;
+  align-items: center;
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid silver;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(7, 7, 74, 1) 36%, rgba(2, 0, 36, 1) 100%);
+}
+
+.navigation span {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .onlyDesktop {
+    display: none;
+  }
+  .navigation span {
+    display: none;
+  }
+}

@@ -1,0 +1,121 @@
+.greeting {
+  width: 80%;
+  z-index: -1;
+  margin: 200px auto;
+}
+
+.greeting__grettingIntroduce {
+  font-size: 1.7em;
+  transition: all .4s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.greeting__grettingIntroduce--active {
+  transform: translateY(0);
+  animation: greetH2 2.5s linear;
+}
+
+.greeting__grettingIntroduce--noActive {
+  transform: translateY(-100vh)
+}
+
+.greeting__grettingInvite {
+  transition: all 1.4s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.greeting__grettingInvite--active {
+  transform: translateY(0);
+  animation: greetH4 6s linear;
+}
+
+.greeting__grettingInvite--noActive {
+  opacity: 0;
+}
+
+@keyframes greetH2 {
+  0% {
+    transform: scale(1);
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  25% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes greetH4 {
+  0% {
+    transform: translateY(+10vh);
+    transform: scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: .2;
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: .8;
+  }
+  30% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.greeting__start {
+  margin: 45px auto;
+  letter-spacing: 1px;
+}
+
+.greeting__start--active {
+  cursor: pointer;
+  animation: start 4s linear;
+}
+
+.greeting__start--noActive {
+  display: none;
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

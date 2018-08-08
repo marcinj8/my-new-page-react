@@ -1,0 +1,22 @@
+.contactForm{
+  display:flex;
+  justify-content: center;
+
+  flex-flow: column;
+}
+
+.button{
+  width: 150px;
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+}
+
+
+@media (min-width: 500px) {
+  .contactForm{
+    display:flex;
+    flex-wrap: wrap;
+    
+  }
+}

@@ -1,0 +1,40 @@
+.from__elementBlock {
+  width: 90%;
+  box-sizing: border-box;
+  margin: 15px auto;
+}
+
+.form__element {
+  width: 90%;
+  height: 50px;
+  padding: 8px;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px black;
+
+}
+
+.form__element:hover, .form__element:focus {
+  border: 2px solid rgb(178, 139, 0);
+  background: rgb(253, 232, 157);
+
+}
+
+.from__elementBlock textarea {
+  width: 90%;
+  height: 90px;
+
+}
+
+@media (min-width: 500px) {
+  .form__element {
+    width: 380px;
+  }
+  .from__elementBlock textarea {
+    width: 380px;
+    height: 110px;
+
+  }
+}

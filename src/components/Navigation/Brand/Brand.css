@@ -1,0 +1,20 @@
+.navigation__brand {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 80%;
+  text-align: left;
+  color: blue;
+  /* text-shadow: 0 0 10px white; */
+  font-size: 1.2em;
+  padding: 12px;
+  margin: 0 0 0 15px;
+}
+
+@media (min-width: 500px) {
+  .navigation__brand {
+    width: 40%;
+    font-size: 1.1em;
+    padding: 15px;
+    margin: 0 0 0 45px;
+  }
+}
