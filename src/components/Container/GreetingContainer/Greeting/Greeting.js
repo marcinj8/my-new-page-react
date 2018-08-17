@@ -21,7 +21,7 @@ const greeting = (props) => {
     <div className='greeting'>
       <h2 className={styleH2.join(' ')}>Hello I'm Marcin!</h2>
       <h4 className={styleH4.join(' ')}>Welcome on my page</h4>
-      <div className={startDiv.join(' ')}> Start </div>
+      <div onClick={props.clicked}className={startDiv.join(' ')}> Start </div>
     </div>
   )
 }

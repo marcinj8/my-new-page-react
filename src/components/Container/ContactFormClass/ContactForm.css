@@ -1,22 +1,81 @@
-.contactForm{
-  display:flex;
+.formContainer {
+  display: flex;
+  flex-flow: column;
+  margin: 15px auto;
+  width: 90%;
   justify-content: center;
+}
 
+.contactForm {
+  display: flex;
+  justify-content: center;
   flex-flow: column;
 }
 
-.button{
-  width: 150px;
-  height: 30px;
-  display: block;
-  margin: 10px auto;
+.contactData {
+  width: 100%;
+  margin: 5px auto;
+  padding: 10px;
 }
 
+.button {
+  width: 150px;
+  height: 30px;
+  color: rgb(0, 0, 121);
+  background: rgb(164, 164, 255);
+  border: 1px solid rgb(34, 34, 255);
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.button:hover {
+  background: rgb(110, 110, 255);
+  border: 1px solid rgb(0, 0, 255);
+  color: rgb(0, 0, 77);
+}
+
+.button:disabled {
+  background: rgb(146, 146, 146);
+  border: 1px solid rgb(68, 68, 68);
+  color: rgb(55, 55, 55);
+  cursor: not-allowed;
+}
+
+.formContainer__box {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+.formContainer__box h3 {
+  color: rgb(178, 139, 0);
+}
+.formContainer__box h4 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 3px;
+  color: rgb(178, 139, 0);
+  width: 100%;
+}
 
 @media (min-width: 500px) {
-  .contactForm{
-    display:flex;
+  .formContainer {
+    flex-flow: column;
+    flex-flow: row;
     flex-wrap: wrap;
-    
+  }
+  .contactForm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contactData {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .formContainer__box {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
   }
 }

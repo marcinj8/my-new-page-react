@@ -7,7 +7,7 @@ const aboutMeBlock = (props) => {
   return (
     <div className='aboutMeBlock'>
       <h3 className='aboutMeBlock__title'>{props.title}</h3>
-      <div>{props.content}</div>
+      <div className='aboutMeBlock__description'>{props.content}</div>
     </div>
   )
 

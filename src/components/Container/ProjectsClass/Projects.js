@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Aux from 'react-aux';
+import Img from '../../../assets/imgQuoteProjects.jpg'
 
 import Project from './Project/Project';
 
@@ -20,7 +22,7 @@ class Projects extends Component {
 
   render() {
     let showProjects = null;
-    let style =['projectContainer'];
+    let style = ['projectContainer'];
     let renderProjects = this.state.projects.map(project => {
       return (
         <Project
@@ -34,9 +36,12 @@ class Projects extends Component {
       style = ['projectContainer', 'projectContainer__open']
 
       showProjects = (
-        <div className={style.join(' ')}>
-          {renderProjects}
-        </div>
+        <Aux>
+          <img className='project__img showImg' src={Img} alt="" />
+          <div className={style.join(' ')}>
+            {renderProjects}
+          </div>
+        </Aux>
       )
     }
 

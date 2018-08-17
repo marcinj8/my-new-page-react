@@ -60,7 +60,9 @@ class App extends Component {
           navigationHandler={this.navigationHandler}
           toggleSideMenu={this.togglerSidebarHandler}
           showComponents={this.state.active} />
-        <Container showComponents={this.state.active} />
+        <Container 
+          showComponents={this.state.active}
+          navigationHandler={() => this.navigationHandler('showHome')}/>
       </div>
     );
   }

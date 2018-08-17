@@ -3,10 +3,18 @@ import React from 'react';
 import './FormELement.css';
 
 const formElement = props => {
-
   let element = null;
   let inputStyle = ['form__element'];
 
+  if(props.animation === 'left'){
+    inputStyle.push('left')
+  }
+  if(props.animation === 'right'){
+    inputStyle.push('right')
+  }
+  if(!props.valid && props.used){
+    inputStyle.push('invalid')
+  }
   switch (props.elementType) {
     case ('input'):
       element = <input

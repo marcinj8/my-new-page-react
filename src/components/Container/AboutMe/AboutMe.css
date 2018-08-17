@@ -24,3 +24,12 @@
     /* transform: scale(1); */
   }
 }
+
+
+@media (min-width: 500px) {
+  .aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}

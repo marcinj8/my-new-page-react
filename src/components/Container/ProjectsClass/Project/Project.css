@@ -45,7 +45,7 @@
 @media (min-width: 500px) {
   .singleProject {
     padding: 5px;
-    width: 40%;
-    min-width: 400px;
+    width: 30%;
+    min-width: 300px;
   }
 }

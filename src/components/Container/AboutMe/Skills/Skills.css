@@ -1,0 +1,27 @@
+.skills {
+  display: flex;
+  width: 95%;
+  margin: 5px auto;
+}
+
+.skills li {
+  list-style-type: none;
+  margin: 5px auto;
+  box-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.skill__list {
+  width: 50%;
+  margin: 5px auto;
+}
+
+.skill__list h5{
+  color: rgb(178, 139, 0);
+
+}
+
+@media (min-width: 500px) {
+  .skills {
+    width: 60%;
+  }
+}

@@ -1,9 +1,10 @@
 .aboutMeBlock {
+  box-sizing: border-box;
   min-height: 120px;
   width: 90%;
   border-bottom: 1px solid silver;
   padding: 15px;
-  margin: 0 auto 15px auto;
+  margin: 0px auto 15px auto;
   box-shadow: 0 2px 1px gray;
 }
 
@@ -11,12 +12,29 @@
   border-bottom: 1px silver solid;
   width: 60%;
   margin: 0 auto;
+  color: rgb(178, 139, 0);
+
+}
+
+.aboutMeBlock__description {
+  width: 90%;
+  margin: 10px auto;
 }
 
 @media (min-width: 500px) {
   .aboutMeBlock {
-    margin: 0px auto 10px auto;
-    width: 70%;
-    
+    padding: 20px 50px;
+    margin: 50px auto 10px auto;
+    width: 45%;
+    border-bottom: none;
+    box-shadow: none;
+  }
+  .aboutMeBlock__title {
+    text-align: left;
+    width: 100%;
+  }
+  .aboutMeBlock__description {
+    width: 100%;
+    text-align: justify;
   }
 }

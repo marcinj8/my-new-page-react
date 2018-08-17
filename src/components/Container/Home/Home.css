@@ -1,0 +1,28 @@
+.home {
+  width: 90%;
+  margin: 155px auto;
+  font-size: 1.2em;
+}
+
+.home div {
+  margin: 5px auto;
+  letter-spacing: 1px;
+}
+
+.home__title {
+  width: 80%;
+  margin: 5px auto 30px auto;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: rgb(178, 139, 0);
+  border-bottom: 1px solid silver;
+}
+
+@media(min-width: 500px) {
+  .home {
+    width: 400px;
+  }
+  .home__title {
+    width: 60%;
+  }
+}

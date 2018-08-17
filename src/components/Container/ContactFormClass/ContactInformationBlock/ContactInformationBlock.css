@@ -1,0 +1,44 @@
+.contactInformation{
+  box-sizing: border-box;
+  width: 95%;
+  min-width: 250px;
+  height: 80px;
+  margin: 10px auto;
+  padding: 0 8px;
+  border: 1px solid gray;
+  background: silver;
+  color: blue;
+  border-radius: 5px 0 5px 0;
+}
+.contactInformation a{
+  color: rgb(178, 139, 0);
+}
+.contactInformation h5{
+  margin: 5px;
+  padding: 0;
+}
+.show {
+  animation: showBlock 1s linear;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+    transform: translateY(+400%)
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(+400%)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+@media (min-width: 500px) {
+  .contactInformation{
+    width: 50%;
+   
+  }
+}
+
